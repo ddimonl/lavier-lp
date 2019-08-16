@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link  type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-4 offset-4 offset-sm-0 col-sm-2">
+                    <a href="#" class="header-logo d-flex justify-content-center">
+                        <img src="img/core-img/logo.jpg" alt="logo">
+                    </a>
+                </div>
+                <div class="col-sm-10 col-lg-4 d-none d-sm-block">
+                    <div class="header-info">
+                        <p>Заказы по тел.: 1-111-11-11-11</p>
+                        <p>(вс-чт 9:00 - 21:00/пт 9:00 - 21:00)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-lg-5">
+                    <h1>Акционные предложения!</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <p class="header-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi cum deleniti deserunt error, et, fugiat itaque iure laboriosam laudantium neque nisi non odit possimus quis ratione recusandae reiciendis sunt suscipit tenetur ut velit vitae. Culpa ipsum molestias porro sapiente. Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="row d-flex d-sm-none justify-content-center">
+                <div class="col-7">
+                    <a href="#goods" class="btn show-btn">СМОТРЕТЬ ТОВАРЫ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Product modal window-->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="product-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="m product w-100">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="product__img">
+                            <img src="" alt="Cosmetics">
+                        </div>
+                        <div class="product__info pb-0">
+                            <div>
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                            <div class="w-100">
+                                <a href="#contact" class="m-auto want-btn" data-backdrop="false">ХОЧУ!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Products list-->
+    <section id="goods">
+        <div class="container">
+            <div class="row goods-wrapper">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!--Product item-->
+                    <div class="product">
+                        <div class="product__img">
+                            <img src="img/product-img/p1.jpg" alt="Cosmetics">
+                            <div class="product__price d-flex flex-column">
+                                <span>39.90&#8372;</span>
+                                <span>285.00&#8372;</span>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <div>
+                                <h4>Очищающее молочко</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, minima?</p>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center">
+                                <a href="#contact" data-target="#productModal" data-whatever="text">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product">
+                        <div class="product__img">
+                            <img src="img/product-img/p2.jpg" alt="Cosmetics">
+                            <div class="product__price d-flex flex-column">
+                                <span>39.90&#8372;</span>
+                                <span>285.00&#8372;</span>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <div>
+                                <h4>Маска грязевая</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, minima?</p>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center">
+                                <a href="#contact" data-target="#productModal">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product">
+                        <div class="product__img">
+                            <img src="img/product-img/p3.jpg" alt="Cosmetics">
+                            <div class="product__price d-flex flex-column">
+                                <span>39.90&#8372;</span>
+                                <span>285.00&#8372;</span>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <div>
+                                <h4>Маска для комбинированой кожи</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, minima?</p>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center">
+                                <a href="#contact" data-target="#productModal">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-lg-8 col-12 offset-lg-4">
+                    <div class="reviews h-100 w-100 d-flex justify-content-center pt-4 pb-4">
+                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                            <h3>ОТЗЫВЫ НАШИХ ПОКУПАТЕЛЕЙ</h3>
+                            <div>
+                                <!--Review item-->
+                                <div class="review d-flex mb-4">
+                                    <div class="review__avatar">
+                                        <img class="w-100 h-100" src="img/u2.jpg" alt="user avatar">
+                                    </div>
+                                    <div class="review__body ml-2">
+                                        <p class="review__msg mt-2 p-3"><span>Алина&nbsp;</span>Спасибо вам за шампунь, очень классный. Пользуюсь уже третьим тюбиком.</p>
+                                        <div class="review__meta d-flex mt-2 ml-3">
+                                            <span>Нравиться</span>
+                                            <span>Ответить</span>
+                                            <span>1 д.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review response d-flex mb-4">
+                                    <div class="review__avatar">
+                                        <img class="w-100 h-100" src="img/u1.jpg" alt="user avatar">
+                                    </div>
+                                    <div class="review__body ml-2">
+                                        <p class="review__msg mt-2 p-3"><span>Алина&nbsp;</span>Спасибо вам за отзыв! Будем и дальше стараться!</p>
+                                        <div class="review__meta d-flex mt-2 ml-3">
+                                            <span>Нравиться</span>
+                                            <span>Ответить</span>
+                                            <span>1 д.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review d-flex mb-4">
+                                    <div class="review__avatar">
+                                        <img class="w-100 h-100" src="img/u2.jpg" alt="user avatar">
+                                    </div>
+                                    <div class="review__body ml-2">
+                                        <p class="review__msg mt-2 p-3"><span>Алина&nbsp;</span>Спасибо вам за шампунь, очень классный. Пользуюсь уже третьим тюбиком.</p>
+                                        <div class="review__meta d-flex mt-2 ml-3">
+                                            <span>Нравиться</span>
+                                            <span>Ответить</span>
+                                            <span>1 д.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review d-flex mb-4">
+                                    <div class="review__avatar">
+                                        <img class="w-100 h-100" src="img/u2.jpg" alt="user avatar">
+                                    </div>
+                                    <div class="review__body ml-2">
+                                        <p class="review__msg mt-2 p-3"><span>Алина&nbsp;</span>Спасибо вам за шампунь, очень классный. Пользуюсь уже третьим тюбиком.</p>
+                                        <div class="review__meta d-flex mt-2 ml-3">
+                                            <span>Нравиться</span>
+                                            <span>Ответить</span>
+                                            <span>1 д.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form">
+        <div id="contact"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-8">
+                    <form class="form">
+                        <div class="form__header w-100">
+                            <h2>Оставьте заявку на косметику по акционной цене</h2>
+                            <p>(почтовая пересылка по Израилю - бесплатно)</p>
+                        </div>
+                        <div class="form__info w-sm-75 w-100 m-auto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequatur distinctio eveniet iure omnis suscipit! Inventore ipsum voluptates voluptatibus.</p>
+                        </div>
+                        <div class="form__input-wrapper d-flex flex-column flex-sm-row w-sm-75 w-100 mt-5">
+                            <div class="w-100">
+                                <label for="name">Имя<span>*</span></label>
+                                <input type="text" class="form-control" placeholder="Как вас зовут?" id="name" required>
+                            </div>
+                            <div class="ml-sm-4 mt-sm-0 mt-2 w-100">
+                                <label for="phone">Телефон<span>*</span></label>
+                                <input type="tel" class="form-control text-success" placeholder="05..." id="phone" required>
+                            </div>
+                        </div>
+                        <div class="w-sm-75 w-100 mt-5 mb-3">
+                            <input type="submit" value="Послать данные" class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer-heading">
+                <div class="col-12 col-sm-3">
+                    <a href="#" class="header-logo d-flex justify-content-center">
+                        <img src="img/core-img/logo.jpg" alt="logo">
+                    </a>
+                </div>
+                <div class="col-6 col-lg-6 d-none d-sm-block">
+                    <p>&copy; 2018 - 2019. <span class="font-weight-bold">Lavier Cosmetics. </span>Все права защищены.</p>
+                    <p>Заказы по тел: <span class="font-weight-bold">1-111-11-11-11</span>(вс-чт 9:00 - 21:00/пт 9:00 - 21:00)</p>
+                </div>
+                <div class="col-3 col-lg-3 d-none d-sm-block">
+                    <p class="fb-icon d-flex align-items-center">Мы в Facebook: &nbsp;<a href="#"><i class="fa fa-facebook-official"></i></a></p>
+                </div>
+            </div>
+            <div class="row footer-body mt-4 d-none d-md-block">
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem eius enim nemo, provident reprehenderit tempore. Animi commodi doloremque earum laboriosam, magni molestias praesentium quaerat quos vero! Accusamus, aliquid assumenda cum deserunt fugiat hic, minus nihil officiis possimus ratione reprehenderit tenetur, ut velit. Adipisci, atque aut consectetur delectus dolor dolores eaque earum eos error et ex exercitationem incidunt inventore ipsa laudantium mollitia necessitatibus nostrum officia perferendis perspiciatis quam quas quasi quos ratione, repellendus reprehenderit sapiente sunt suscipit temporibus totam veniam.</p>
+                </div>
+            </div>
+            <div class="row footer-add mt-4 d-none d-lg-flex">
+                <div class="col-8">
+                    <ul class="d-flex w-100 justify-content-around">
+                        <li><img src="img/core-img/quality.png" alt="certificate"></li>
+                        <li><img src="img/core-img/quality.png" alt="certificate"></li>
+                        <li><img src="img/core-img/quality.png" alt="certificate"></li>
+                        <li><img src="img/core-img/quality.png" alt="certificate"></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="payments">
+                        <p>Методы оплаты:</p>
+                        <ul class="d-flex mt-2">
+                            <li><img src="img/core-img/payment1.png" alt="payment name"></li>
+                            <li><img src="img/core-img/payment1.png" alt="payment name"></li>
+                            <li><img src="img/core-img/payment1.png" alt="payment name"></li>
+                            <li><img src="img/core-img/payment1.png" alt="payment name"></li>
+                            <li><img src="img/core-img/payment1.png" alt="payment name"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
