@@ -2,12 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lavier cosmetics</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width,initial-scale=1">
     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
     <link  type="text/css" rel="stylesheet" href="style.css">
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <header id="header">
@@ -72,7 +75,7 @@
     </div>
 
     <!--Products list-->
-    <section id="goods">
+    <section id="goods" class="goods">
         <div class="container">
             <div class="row goods-wrapper">
                 <div class="col-12 col-md-6 col-lg-4">
@@ -140,12 +143,12 @@
         </div>
     </section>
 
-    <section id="reviews">
+    <section class="reviews">
         <div class="container">
             <div class="row h-100">
                 <div class="col-lg-8 col-12 offset-lg-4">
-                    <div class="reviews h-100 w-100 d-flex justify-content-center pt-4 pb-4">
-                        <div class="reviews__wrapper d-flex flex-column align-items-center">
+                    <div class="reviews-container h-100 w-100 d-flex justify-content-center pt-4 pb-4">
+                        <div class="reviews-wrapper d-flex flex-column align-items-center">
                             <h3>ОТЗЫВЫ НАШИХ ПОКУПАТЕЛЕЙ</h3>
                             <div>
                                 <!--Review item-->
@@ -287,9 +290,6 @@
         </div>
     </footer>
 
-
-
-    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>

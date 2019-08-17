@@ -1,5 +1,4 @@
-@import url(css/bootstrap.min.css);
-@import url(css/reset.css);
+
 
 body {
     font-family: Arial, sans-serif;
@@ -15,7 +14,7 @@ p, a, span {
     font-size: 16px;
 }
 
-#header {
+header {
     width: 100%;
     min-height: 460px;
     background-image: url("img/bg-img/bg-header1.jpg");
@@ -27,7 +26,7 @@ p, a, span {
     padding-bottom: 40px;
 }
 
-#header h1 {
+h1 {
     color: #e17976;
     font-size: 30px;
     margin-top: 110px;
@@ -51,7 +50,6 @@ p, a, span {
 }
 
 .header-info p {
-    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -75,7 +73,7 @@ p, a, span {
     margin: 20px auto;
 }
 
-#goods {
+.goods {
     width: 100%;
     height: auto;
     background-color: #fef6f6;
@@ -118,7 +116,6 @@ p, a, span {
     align-items: center;
     height: 36px;
     width: 70px;
-    font-size: 16px;
 }
 
 .product__price span:first-child {
@@ -141,7 +138,6 @@ p, a, span {
 .product__info p {
     color: #7d7d7d;
     margin: 30px 0;
-    font-size: 16px;
     line-height: 1.5;
 
 }
@@ -159,7 +155,7 @@ p, a, span {
 }
 
 /*reviews*/
-#reviews {
+.reviews {
     height: auto;
     width: 100%;
     background-image: url("img/bg-img/bg-review.jpg");
@@ -169,17 +165,17 @@ p, a, span {
     background-size: cover;
 }
 
-.reviews {
+.reviews-container {
     background-color: #fff;
     height: 100%;
     border: 1px solid #d2d2d2;
 }
 
-.reviews__wrapper > div{
+.reviews-wrapper > div{
     width: 70%;
 }
 
-.reviews h3 {
+h3 {
     font-weight: bold;
     font-size: 24px;
     text-align: center;
@@ -219,7 +215,6 @@ p, a, span {
 
 .review__meta span {
    color: #dbdbdb;
-
 }
 
 .review__meta span:last-child {
@@ -263,7 +258,7 @@ label > span {
     color: red;
 }
 
-.form__header h2 {
+h2 {
     font-weight: bold;
     font-size: 28px;
     text-align: center;
@@ -291,7 +286,6 @@ footer {
 }
 
 footer p {
-    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -311,10 +305,6 @@ footer p {
 
 .m.product {
     position: relative;
-}
-
-.m.product a {
-
 }
 
 .close {
@@ -340,14 +330,4 @@ footer p {
         font-size: 16px;
         line-height: 1.5;
     }
-
-    .
 }
-
-
-
-
-
-
-
-
